@@ -1,0 +1,17 @@
+<h4 translate>home.TITLE</h4>
+
+<span changeto-image>this is span</span>
+<br>
+<changeto-image>this is a simple text</changeto-image>
+<hr>
+<item-handler ng-model="items">
+
+        <input type="text" ng-model="input">
+        <button type="submit" ng-click="add()">Add</button>
+    <ul>
+        <li ng-repeat="item in items track by $index">
+            {{ item }} <button ng-click="remove($index)">Remove</button>
+        </li>
+    </ul>
+
+</item-handler>
